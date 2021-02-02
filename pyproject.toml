@@ -1,0 +1,58 @@
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.nitpick]
+style = "https://raw.githubusercontent.com/wemake-services/wemake-python-styleguide/master/styles/nitpick-style-wemake.toml"
+
+
+[tool.poetry]
+name = "django-pre-deploy-checks"
+description = "Django checks you should run on application deploy"
+version = "0.1.0"
+license = "MIT"
+
+authors = [
+  "sobolevn <mail@sobolevn.me>",
+  "skarzi",
+]
+
+readme = "README.md"
+
+repository = "https://github.com/wemake.services/django-pre-deploy-checks"
+
+keywords = [
+  "django",
+  "django checks",
+  "deploy",
+]
+
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Developers",
+  "Operating System :: OS Independent",
+  "Topic :: Software Development :: Libraries :: Python Modules",
+]
+
+[tool.poetry.dependencies]
+python = ">=3.6,<3.9"
+
+[tool.poetry.dev-dependencies]
+mypy = "^0.800"
+
+wemake-python-styleguide = "^0.14"
+flake8-pytest-style = "^1.3"
+nitpick = "^0.23"
+
+safety = "^1.10"
+
+pytest = "^6.2"
+pytest-cov = "^2.11"
+pytest-randomly = "^3.5"
+
+sphinx = "^3.4"
+sphinx-autodoc-typehints = "^1.11"
+doc8 = "^0.8"
+m2r2 = "^0.2"
+tomlkit = "^0.7"
